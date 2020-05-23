@@ -60,6 +60,8 @@ def gen_new_file(X,k):
     np.save(out_file, k)
     
 def run(data_dir, file):
+    # set_data_dir("../datasets/")
+    # set_file_name("0.txt")
     cs = []
     ks = []
     full_file = data_dir + file
@@ -76,9 +78,8 @@ def run(data_dir, file):
     print("Best k:" + str(best_k))
     gen_new_file(file,best_k)
 
-data_dir = '.'
-file_name = None
-set_data_dir("../datasets/")
-set_file_name("0.txt")
-run(data_dir, file_name)
+# data_dir = '.'
+# file_name = None
+
+# run(data_dir, file_name)
 
